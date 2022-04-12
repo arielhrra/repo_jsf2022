@@ -286,3 +286,9 @@ text-decoration: none;
     background-position: center;
 
 }
+
+#fondo h1{
+    color: #030303;
+    font-family: sans-serif;
+    font-size: large;
+}
