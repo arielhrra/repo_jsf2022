@@ -211,11 +211,12 @@ text-decoration: none;
 
 .grid-estudio {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
+    width: 1500px;
 }
 
 @media (min-width: 600px) {
@@ -252,11 +253,7 @@ text-decoration: none;
     display: grid;
 
     grid-template-columns:1fr 1fr 1fr 1fr;
-
-    /*
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr 1fr 1fr 1fr));
     grid-auto-rows: minmax(200px, auto);
-    */
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
@@ -272,7 +269,24 @@ text-decoration: none;
         }
 }
 
-.fondo-cliente {
-max-width: 100%;    
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondo {
+    width: 1500px;
+    height: 500px;
+    background-image: url(../img/mitchell-hollander-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#fondo h1{
+    color: #030303;
+    font-family: sans-serif;
+    font-size: medium;
 }
 
